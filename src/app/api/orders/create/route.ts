@@ -159,6 +159,7 @@ export async function POST(request: NextRequest) {
       .insert([
         {
           order_number: orderNumber,
+          payment_method: "btcpay", // Explicitly set payment method for BTCPay orders
           status: "pending",
           total_amount: totalAmount,
           items: items,
